@@ -1,12 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+  supported by Chrome and Opera */
+}
+
+.title-container {
+  position: absolute;
+  z-index: 1;
+  /* background-color: #5f5f5fd9; */
+  color: #e4e4e4;
+  width: 80%;
+  max-width: 500px;
+  line-height: 32px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+form {
+  display: flex;
+}
+
+.fields {
+  background-color: #505050a2;
+  font-size: 1.25rem;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+button {
+  height: 100%;
+  width: 48px;
+  border-radius: 16px;
+  font-size: 1rem;
+  outline: none;
+  margin-left: 10px;
+  background-color: #e4e4e4;
+}
+
+section+section {
+  margin-top: 32px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  color: #e4e4e4;
+  font-size: 1.75rem;
+}
+
+h1:after {
+  content: ' │';
+  text-align: center;
+  animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 .slider {
