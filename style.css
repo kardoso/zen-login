@@ -61,6 +61,7 @@ button {
   outline: none;
   margin-left: 10px;
   background-color: #e4e4e4;
+  cursor: pointer;
 }
 
 section+section {
